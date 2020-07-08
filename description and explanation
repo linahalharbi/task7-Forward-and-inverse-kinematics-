@@ -1,0 +1,39 @@
+Description 
+
+Materials :- 
+
+Arduino Uno . 
+2 Servo motors . 
+
+Connection:- 
+
+ the  Servo motor :- 
+
+Yellow wire to D9 pin   
+Brown wire to GND pin 
+Red wire to 5v pin 
+
+Forward kinematic
+ 
+How it works ?  
+o compute the position of the end-effector from specified values for the joint parameters. 
+
+The code :- 
+
+1- declaring the L1,L1,Q1,Q2,q1q2 . AS WELL AS Substitute values of L1,L2,Q
+2- including servo library .
+3-void setup which to  put in the code that you want to run one time  , basically include the pinMode of servo motor . 
+4- void loop to  put in the code that you want to run continuously . 
+In it I put the functions and equations that tells the motor to turn by given angles to find the position (x,y) . 
+
+Inverse kinematics 
+How it works ? 
+The reverse process that computes the angles parameters that achieve a specified / certain position of the end-effector is known . 
+
+ The code :-
+
+1- declaring the L1,L1,Q1,Q2,q1q2 . AS WELL AS Substitute values of L1,L2,Q
+2- including servo library .
+3-void setup which to  put in the code that you want to run one time  , basically include the pinMode of servo motor . 
+4- void loop to  put in the code that you want to run continuously . In it I put the equations to find the angles to let the servo motor turn into by given a certain position (2,4) . 
+
